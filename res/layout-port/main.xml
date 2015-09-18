@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stones"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.meditatetimer.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/timerText_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time to Be Awake : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <SeekBar
+            android:id="@+id/time_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="120"
+            android:progress="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="Pause" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="159dp"
+        android:layout_gravity="start"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/TenMinButton"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="10 Minutes" />
+
+        <Button
+            android:id="@+id/TwentyMinButton"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="20 Minutes" />
+
+        <Button
+            android:id="@+id/ThirtyMinButton"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="30 Minutes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="47dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/meditation_quote"
+        android:layout_width="325dp"
+        android:layout_height="180dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
